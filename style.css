@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+#passBox {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    color: #333;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+#passBox:focus {
+    border-color: #667eea;
+}
+
+#rangeInput {
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row p {
+    color: #555;
+    font-weight: 600;
+}
+
+#length {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+#btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #667eea;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn:hover {
+    background: #5563d8;
+    transform: translateY(-2px);
+}
+
+#btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    #passBox {
+        font-size: 0.9rem;
+    }
+}
